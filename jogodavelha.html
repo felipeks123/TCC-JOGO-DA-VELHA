@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <title>jogo da velha</title>
+ <meta charset="utf-8">
+</head>
+
+<style type="text/css">
+ *{
+  margin: 0;
+  padding: 0;
+ }
+ img{
+  width: 50px;
+  height: 50px;
+ }
+ #container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+ }
+ .espaco{
+  width: 70px;
+  height: 70px;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .linha{
+  display: flex;
+ }
+ #tabuleiro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ #btnRecomecar{
+  padding: 10px;
+ }
+
+</style>
+
+<body>
+
+ <div id="container">
+  <p>Vez do jogador:</p>
+  <img src="">
+ </div>
+
+ <div id="tabuleiro">
+  <div class="linha">
+   <div id="a1" class="espaco" jogada=""></div>
+   <div id="a2" class="espaco" jogada=""></div>
+   <div id="a3" class="espaco" jogada=""></div>
+  </div>
+
+  <div class="linha">
+   <div id="b1" class="espaco" jogada=""></div>
+   <div id="b2" class="espaco" jogada=""></div>
+   <div id="b3" class="espaco" jogada=""></div>
+  </div>
+
+  <div class="linha">
+   <div id="c1" class="espaco" jogada=""></div>
+   <div id="c2" class="espaco" jogada=""></div>
+   <div id="c3" class="espaco" jogada=""></div>
+  </div>
+ </div>
+
+ <div id="container">
+  <button id="btnRecomecar" disabled>Recomeçar o Jogo</button>
+ </div>
+ 
+<script type="text/javascript" src="game.js"></script>
+</body>
+</html>
+
+
